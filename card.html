@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn-uicons.flaticon.com/uicons-bold-straight/css/uicons-bold-straight.css">
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+
+        }
+        body{
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #f3f6fb;
+        }
+        .card{
+            width: 300px;
+            height: 400px;
+            background-color: white;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+            border-radius: 10px;
+            display: flex;
+            flex-direction: column;
+            position: relative;
+        }
+        .row1{
+            height: 100px;
+            background-color: blue;
+            border-radius: 10px 10px 0px 0px;
+        }
+        .profile{
+            height: 100px;
+            width: 100px;
+            border-radius: 50%;
+            background-color: grey;
+            position: absolute;
+            top: 40px;
+            left: 100px;
+            background-image: url("/profile.png");
+            background-size: cover;
+        }
+        .row2{
+            height: 70px;
+            position: absolute;
+            top: 150px;
+            left: 60px;
+            text-align: center;
+            font-family:Verdana, Geneva, Tahoma, sans-serif
+        }
+
+        .row3{
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            position: relative;
+            top: 120px;   
+        }
+        .circle{
+            height: 30px;
+            width: 30px;
+            border-radius: 50%;
+            background-color: grey;
+        }
+        #fb{
+            background-image: url("/facebook.png");
+            background-size: cover;
+        }
+        #twitter{
+            background-image: url("/twitter.png");
+            background-size: cover;
+        }
+        #insta{
+            background-image: url("/instagram.png");
+            background-size: cover;
+        }
+        #YT{
+            background-image: url("/youtube.png");
+            background-size: cover;
+        }
+        .row4{
+            height: 60px;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            position: relative;
+            top: 140px;
+        }
+        .box1, .box2{
+            height: 40px;
+            width: 100px;
+            background-color: blue;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 25px;
+        }
+
+        .row5{
+            height: 50px;
+            width: 100%;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            position: relative;
+            top: 140px;
+            padding: 0 20px;
+        }
+        .like, .comment, .share{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 30px;
+            width: 80px;
+            border-radius: 20px;
+        }
+        .like i, .comment i, .share i{
+            margin-right: 6px;
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <div class="row1"></div>
+        <div class="profile"></div>
+
+        <div class="row2">
+            <h3>CodingLab</h3>
+            <h4>YouTube & Blogger</h4>
+        </div>
+
+        
+        <div class="row3">
+            <div class="circle" id="fb"></div>
+            <div class="circle" id="twitter"></div>
+            <div class="circle" id="insta"></div>
+            <div class="circle" id="YT"></div>
+        </div>
+
+        <div class="row4">
+            <div class="box1">Subscribe</div>
+            <div class="box2">Message</div>
+        </div>
+
+        <div class="row5">
+            <div class="like"><i class="fi fi-bs-heart"></i>60.4K</div>
+            <div class="comment"><i class="fi fi-bs-comment"></i>1.2K</div>
+            <div class="share"><i class="fi fi-bs-share"></i>850</div>
+        </div>
+    </div>
+</body>
+</html>
